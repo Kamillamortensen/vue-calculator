@@ -1,0 +1,90 @@
+.grid-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "calculator-container calculator-log-container"
+    ;
+}
+
+.calculator-container {
+    grid-area: calculator-container;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    
+    "calculator"
+    ;
+}
+
+.calculator {
+    grid-area: calculator;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "answer-display"
+    "button-container"
+    "button-container"
+    "button-container"
+    "button-container"
+    ;
+}
+
+.answer-display{
+    grid-area: answer-display;
+    position: relative;
+}
+
+.button-container{
+    grid-area: button-container;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "button-container-row4"
+    "button-container-row3"
+    "button-container-row2"
+    "button-container-row1"
+    ;
+}
+
+.button-container-row1{
+    grid-area: button-container-row1;
+}
+
+.button-container-row2{
+    grid-area: button-container-row2;
+}
+
+.button-container-row3{
+    grid-area: button-container-row3;
+}
+
+.button-container-row4{
+    grid-area: button-container-row4;
+}
+
+.calculator-log-container {
+    grid-area: calculator-log-container;
+    position: relative; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "log-button"
+    "log"
+    "log"
+    "log"
+    ;
+}
+
+.log-button {
+    grid-area: log-button;
+}
+
+.log {
+    grid-area: log;
+}
+
+
+
